@@ -9,5 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     title='Angular插值';
-    mySite='LinDL站点'
+    mySite='LinDL站点';
 }
