@@ -17,4 +17,12 @@ export class SiteFormComponent {
     onSubmit() { this.submitted = true; }
     // TODO: 完成后移除
     get diagnostic() { return JSON.stringify(this.model); }
+
+    active = true;
+
+    newSite() {
+        this.model = new Site(5, '', '');
+        this.active = false;
+        setTimeout(() => this.active = true, 0);
+    }
 }
